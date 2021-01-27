@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Slider en JS Vanilla</title>
+</head>
+<body>
+    <div class="slider">
+        <div class="container-slides">
+            <img src="img/img1.jpg" alt="Couché de soleil du la plage de Dieppe" class="active">
+            <img src="img/img2.jpg" alt="Musée de la résistance Neufchâtel-en-Bray">
+            <img src="img/img3.jpg" alt="Grande place de Lille">
+        </div>
+        <div class="commands">
+            <button class="left"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="50" height="50" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><path d="M14 5l-5 5l5 5l-1 2l-7-7l7-7z" fill="#060914"/></svg></button>
+
+            <button class="right"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="50" height="50" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><path d="M6 15l5-5l-5-5l1-2l7 7l-7 7z" fill="#060914"/></svg></button>
+        </div>
+        <div class="circles">
+            <button data-click="1" class="circle active-circle"></button>
+            <button data-click="2" class="circle"></button>
+            <button data-click="3" class="circle"></button>
+        </div>
+    </div>
+    
+    
+
+    <script src="app.js"></script>
+</body>
+</html>

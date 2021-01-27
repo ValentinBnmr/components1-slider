@@ -1,0 +1,111 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0b1020;
+    color: #060914
+}
+
+.slider {
+    width: 900px;
+    height: 600px;
+    margin: 100px auto 0;
+    position: relative;
+}
+
+.container-slides {
+    width: 100%;
+    height: 100%;
+}
+
+.container-slides img {
+    width: 100%;
+    height: auto;
+    position: absolute; 
+    /* Les images se mettent au-dessus des autres (elles sortent du flux) */
+    opacity: 0;
+    transition:  opacity 0.2s ease-in-out;
+}
+
+.commands {
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.commands button {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgba(163, 163, 163, 0.432);
+    transition: 0.5s;
+}
+
+.commands button:hover {
+    background-color: rgba(255, 255, 255, 0.432);
+    
+}
+
+.commands svg {
+    width: 30px;
+    position: relative;
+}
+
+.commands button:nth-child(1) {
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+}
+.commands button:nth-child(2) {
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+}
+
+.commands button:nth-child(1) img {
+    left: -4px;
+}
+
+.circles {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(236, 236, 236);
+}
+
+.active-circle {
+    background-color: rgb(91, 134, 255);
+}
+
+.active {
+    opacity: 1 !important;
+}
+
+.pause {
+    text-align: center;
+}
