@@ -24,7 +24,7 @@ function nextSlide(){
         imgs[index].classList.add('active')
     }
 
-    // Lie le passage de slides au changement de coucleur des petit cercles
+    // Lis le passage de slides au changement de couleur des petit cercles
     for(i = 0; i < circles.length; i++){
 
         if(circles[i].getAttribute('data-click') - 1 === index){
@@ -57,7 +57,7 @@ function previousSlide(){
         imgs[index].classList.add('active')
     }
 
-    // Lie le passage de slides au changement de coucleur des petit cercles
+ 
     for(i = 0; i < circles.length; i++){
 
         if(circles[i].getAttribute('data-click') - 1 === index){
@@ -73,7 +73,7 @@ function previousSlide(){
 
 document.addEventListener('keydown', keyPressed)
 
-// Permets de passer à la slide suivent ou précédente avec les flèches gauches ou droites
+// Permets de passer à la slide suivante ou précédente avec les flèches gauches ou droites
 function keyPressed(e){
 
     if(e.keyCode === 37){
@@ -88,7 +88,7 @@ function keyPressed(e){
 
 
 
-//Gestion du lien entre les petites cercles et les slides
+//Gestion du lien entre les petits cercles et les slides
 circles.forEach(circle => {
 
     circle.addEventListener('click', function(){
